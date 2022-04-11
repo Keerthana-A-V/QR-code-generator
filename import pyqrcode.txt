@@ -1,0 +1,10 @@
+import pyqrcode
+import png
+def qr_code():
+    s="Keerthana is my name"
+    d=pyqrcode.create(s)
+    d.png('my_img.png',scale=6)
+    print("code executed properly")
+    
+if __name__=='__main__':
+    qr_code()
